@@ -1,7 +1,7 @@
 public class TestReadCsv{
 	public static void main(String[] args){
 		try{
-			ReadCsv csv=new ReadCsv("contacts.csv");
+			ReadCsv csv=new ReadCsv(args[0]);
 			int num_headers=csv.getNumberOfHeaders();
 				
 			for(String s: csv.getHeaders()) System.out.print(s+"\t");
